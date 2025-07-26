@@ -1,75 +1,91 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DynoGo | Be Dynamized</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DynoGo - Dinamômetros e Performance</title>
   <style>
     :root {
       --primary: #152A3D;
       --accent: #0077C8;
-      --gray1: #1a2b3d;
-      --gray2: #2e3d4f;
-      --gray3: #444f5b;
+      --bg: #0f1b2a;
       --font: 'Open Sans', sans-serif;
     }
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: var(--font);
-      background-color: var(--gray1);
-      color: white;
+      background-color: #ffffff;
+      color: #222;
     }
     header {
       background-color: var(--primary);
-      padding: 2rem;
-      text-align: center;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
     header img {
-      height: 80px;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin-top: 1rem;
+      height: 60px;
     }
     nav a {
+      margin-left: 2rem;
       color: white;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
     }
-    section {
-      padding: 4rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .hero {
-      background: linear-gradient(to right, var(--primary), var(--accent));
+    .banner {
+      background: url('banner.jpg') center/cover no-repeat;
+      color: white;
       text-align: center;
       padding: 6rem 2rem;
     }
-    .hero h1 {
+    .banner h1 {
       font-size: 3rem;
-      margin: 0;
+      margin-bottom: 1rem;
     }
-    .hero p {
-      font-size: 1.2rem;
-      color: #cbd6e2;
+    .banner p {
+      font-size: 1.25rem;
     }
-    .btn {
-      display: inline-block;
-      margin-top: 2rem;
-      background: var(--accent);
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+    .section p, .section ul {
+      font-size: 1.1rem;
+      color: #444;
+    }
+    .cta {
+      background-color: var(--accent);
       color: white;
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+    .cta a {
+      display: inline-block;
+      margin-top: 1rem;
       padding: 1rem 2rem;
-      border-radius: 8px;
+      background-color: white;
+      color: var(--accent);
       text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
     }
     footer {
       text-align: center;
+      background-color: var(--primary);
+      color: white;
       padding: 2rem;
-      background: var(--gray2);
-      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -82,30 +98,33 @@
       <a href="#contato">Contato</a>
     </nav>
   </header>
-  <section class="hero">
-    <h1>Be Dynamized</h1>
-    <p>Alta performance, precisão e tecnologia para entusiastas e profissionais do automobilismo.</p>
-    <a href="#contato" class="btn">Fale conosco</a>
+
+  <section class="banner">
+    <h1>DynoGo</h1>
+    <p>Precisão e potência para quem vive performance</p>
   </section>
-  <section id="sobre">
-    <h2>Sobre a DynoGo</h2>
-    <p>A DynoGo é uma empresa especializada na fabricação de dinamômetros de alta performance e na venda de peças para tuning e preparação automotiva. Com foco em inovação, precisão e confiabilidade, oferecemos soluções para quem exige o máximo de desempenho.</p>
+
+  <section class="section" id="sobre">
+    <h2>Quem Somos</h2>
+    <p>A DynoGo é referência nacional em fabricação de dinamômetros e soluções para performance automotiva. Nossos equipamentos são desenvolvidos com engenharia avançada, voltados para oficinas, preparadores e entusiastas que exigem excelência.</p>
   </section>
-  <section id="produtos">
-    <h2>Nossos Produtos</h2>
+
+  <section class="section" id="produtos">
+    <h2>Produtos</h2>
     <ul>
-      <li>Dinamômetros para carros e motos</li>
-      <li>Peças e acessórios para preparação de motores</li>
-      <li>Ferramentas para oficinas especializadas</li>
-      <li>Suporte técnico e calibração de equipamentos</li>
+      <li>Dinamômetros de rolo para carros e motos</li>
+      <li>Bancos de testes e acessórios para oficinas</li>
+      <li>Peças e kits de preparação</li>
+      <li>Serviços de calibração e suporte técnico</li>
     </ul>
   </section>
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Entre em contato conosco e descubra como podemos acelerar o seu projeto.</p>
-    <p>Email: contato@dynogo.com</p>
-    <p>Telefone: (45) 99927-7720</p>
+
+  <section class="cta" id="contato">
+    <h2>Solicite um Orçamento</h2>
+    <p>Entre em contato com a equipe DynoGo e leve precisão para sua oficina ou projeto.</p>
+    <a href="mailto:contato@dynogo.com">Fale com a gente</a>
   </section>
+
   <footer>
     &copy; 2025 DynoGo. Todos os direitos reservados.
   </footer>
